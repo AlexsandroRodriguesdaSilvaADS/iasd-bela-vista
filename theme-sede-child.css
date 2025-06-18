@@ -1,0 +1,124 @@
+/*!
+Theme Name: PA - Theme Sedes (Child)
+Theme URI: adventistas.org
+Description: Parent theme for adventistas.org website network.
+Author: WebDSA
+Version: 1.5.2
+Requires at least: 6.0
+Requires PHP: 8.0
+Template: pa-theme-sedes
+*/
+
+/* CONTAINER PRINCIPAL */
+.pa-slider-principal {
+    background-color: #000;
+}
+
+.pa-slider-principal .glide__slide {
+    width: 100vw;
+    height: 83vh;
+
+    background-size: auto 100%;
+    background-position: 50%;
+    opacity: .5;
+    transition: opacity .5s;
+    background-color: #000;
+}
+
+.pa-slider-principal .glide__slide .container .row {
+    height: 600px;
+    color: #fff
+}
+
+@media (max-width:575px) {
+    .pa-slider-principal .glide__slide .container .row {
+        height: 134.933vw;
+    }
+}
+
+.pa-slider-principal .glide__slide .container .row .col {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 25px;
+}
+
+/* PÁGINA IASD SJE */
+.pa-slider-principal .glide__slide .container .row .agenda {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 25px;
+    width: 100%;
+    height: 110%;
+}
+
+/* GOOGLE AGENDA */
+.frame iframe {
+    width: 100%;
+    height: 50vh;
+}
+
+/* TITULO 1 */
+.pa-slider-principal .glide__slide .container .row h1 {
+    font-family: var(--pa-font-secondary);
+    font-weight: 700;
+    letter-spacing: .025em
+}
+
+.pa-slider-principal .glide__slide .container .row small,
+.pa-slider-principal .glide__slide .container .row span {
+    letter-spacing: .1em
+}
+
+.pa-slider-principal .glide__slide--active {
+    opacity: 1;
+}
+
+.pa-slider-principal .pa-glide-principal {
+    position: relative;
+}
+
+/* BOTÃO */
+.pa-slider-principal .pa-glide-principal .pa_slide_item a.btn {
+    border: none;
+    margin: 10px;
+    filter: brightness(100%) grayscale(0);
+    -webkit-filter: brightness(100%) grayscale(0);
+    -moz-filter: brightness(100%) grayscale(0);
+    -o-filter: brightness(100%) grayscale(0);
+    -ms-filter: brightness(100%) grayscale(0);
+    transition: all .15s ease-in-out;
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+}
+
+/* BOTÃO HOVER */
+.pa-slider-principal .pa-glide-principal .pa_slide_item a.btn:hover {
+    filter: brightness(130%) grayscale(30%);
+    -webkit-filter: brightness(130%) grayscale(30%);
+    -moz-filter: brightness(130%) grayscale(30%);
+    -o-filter: brightness(130%) grayscale(30%);
+    -ms-filter: brightness(130%) grayscale(30%);
+}
+
+/* PONTOS DO CONTROLE DE TRANSIÇÃO */
+.pa-slider-principal .pa-glide-principal .pa-slider-controle {
+    color: var(--pa-color-default);
+    cursor: pointer;
+    position: absolute;
+    right: 52px;
+    bottom: 0;
+    left: 52px;
+}
+
+.pa-slider-principal .pa-glide-principal .pa-slider-controle .icon {
+    color: var(--pa-color-default);
+}
+
+.pa-slider-principal .pa-glide-principal .pa-slider-controle .pa-slider-bullet {
+    font-size: 0.5rem;
+}
+
+.pa-slider-principal .pa-glide-principal .pa-slider-controle .glide__bullet--active {
+    color: #fff;
+    background-color: transparent;
+}
