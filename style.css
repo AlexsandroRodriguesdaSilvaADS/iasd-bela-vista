@@ -62,6 +62,10 @@ header.pa-menu {
     padding: 0.8rem 1rem;
 }
 
+#agenda {
+    margin-top: 50px;
+}
+
 .pa-menu-default .nav .active a {
     border-bottom: 4px solid var(--pa-color-default);
 }
@@ -267,8 +271,9 @@ div.ativo~.mask {
 }
 
 footer.pa-footer .pa-social-network .icons i {
+    margin-left: 20px;
     margin-top: 15px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--pa-color-gray01);
 }
 
